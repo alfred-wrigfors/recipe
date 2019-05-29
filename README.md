@@ -48,7 +48,8 @@ Feel free to download and test out for yourself, maybe you have fun ideas and ne
         recipesAdded INT
         );
       ```
-    b. For the content: <br>
+      <br>
+    b. For the content:
       ```SQL
       CREATE TABLE categories(
         id INT AUTO_INCREMENT PRIMARY KEY,
