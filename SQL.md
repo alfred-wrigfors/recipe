@@ -9,8 +9,8 @@ This is an instruction on getting the database with tables ready.
   CREATE DATABASE recipe;
   ```
 
-  2. Add the necessary tables withe the columns: <br>
-    a. For the users:
+  2. Add the necessary tables with the the columns: <br>
+    1. For the users:
       ```SQL
       CREATE TABLE adminUsers(
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,62 +42,72 @@ This is an instruction on getting the database with tables ready.
         recipesAdded INT
         );
       ```
-      <br>
-    b. For the content:
-       ```SQL
-      CREATE TABLE categories(
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        uniqueID NVARCHAR(max),
-        description VARCHAR(2500),
-      );
-      CREATE TABLE ingredients;
-      CREATE TABLE recipes(
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        uniqueID VARCHAR(32),
-        description NVARCHAR(max),
-        prepareTime INT,
-        likeAmount INT,
-        prepareTime INT,
-        0ingredient-Unit VARCHAR(128),
-        0ingredientAmount INT,
-        1ingredient-Unit VARCHAR(128),
-        1ingredientAmount INT,
-        2ingredient-Unit VARCHAR(128),
-        2ingredientAmount INT,
-        3ingredient-Unit VARCHAR(128),
-        3ingredientAmount INT,
-        4ingredient-Unit VARCHAR(128),
-        4ingredientAmount INT,
-        5ingredient-Unit VARCHAR(128),
-        5ingredientAmount INT,
-        6ingredient-Unit VARCHAR(128),
-        6ingredientAmount INT,
-        7ingredient-Unit VARCHAR(128),
-        7ingredientAmount INT,
-        8ingredient-Unit VARCHAR(128),
-        8ingredientAmount INT,
-        9ingredient-Unit VARCHAR(128),
-        9ingredientAmount INT,
-        10ingredient-Unit VARCHAR(128),
-        10ingredientAmount INT,
-        11ingredient-Unit VARCHAR(128),
-        11ingredientAmount INT,
-        12ingredient-Unit VARCHAR(128),
-        12ingredientAmount INT,
-        13ingredient-Unit VARCHAR(128),
-        13ingredientAmount INT,
-        14ingredient-Unit VARCHAR(128),
-        14ingredientAmount INT,
-        15ingredient-Unit VARCHAR(128),
-        15ingredientAmount INT,
-        16ingredient-Unit VARCHAR(128),
-        16ingredientAmount INT,
-        17ingredient-Unit VARCHAR(128),
-        17ingredientAmount INT,
-        18ingredient-Unit VARCHAR(128),
-        18ingredientAmount INT,
-        19ingredient-Unit VARCHAR(128),
-        19ingredientAmount INT,
-      );
-      ```
+      
+  2. Add the necessary tables with the the columns: <br>
+    1. For the content: <br>
+      1. For the different categories:
+        ```SQL
+        CREATE TABLE categories(
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          uniqueID NVARCHAR(max),
+          description VARCHAR(2500),
+        );
+        ```
+        
+      2. For the different categories:
+        ```SQL
+        CREATE TABLE ingredients;
+        ```
+        
+      3. For the recipes them selfs:
+        ```SQL
+        CREATE TABLE recipes(
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          uniqueID VARCHAR(32),
+          description NVARCHAR(max),
+          prepareTime INT,
+          likeAmount INT,
+          prepareTime INT,
+          0ingredient-Unit VARCHAR(128),
+          0ingredientAmount INT,
+          1ingredient-Unit VARCHAR(128),
+          1ingredientAmount INT,
+          2ingredient-Unit VARCHAR(128),
+          2ingredientAmount INT,
+          3ingredient-Unit VARCHAR(128),
+          3ingredientAmount INT,
+          4ingredient-Unit VARCHAR(128),
+          4ingredientAmount INT,
+          5ingredient-Unit VARCHAR(128),
+          5ingredientAmount INT,
+          6ingredient-Unit VARCHAR(128),
+          6ingredientAmount INT,
+          7ingredient-Unit VARCHAR(128),
+          7ingredientAmount INT,
+          8ingredient-Unit VARCHAR(128),
+          8ingredientAmount INT,
+          9ingredient-Unit VARCHAR(128),
+          9ingredientAmount INT,
+          10ingredient-Unit VARCHAR(128),
+          10ingredientAmount INT,
+          11ingredient-Unit VARCHAR(128),
+          11ingredientAmount INT,
+          12ingredient-Unit VARCHAR(128),
+          12ingredientAmount INT,
+          13ingredient-Unit VARCHAR(128),
+          13ingredientAmount INT,
+          14ingredient-Unit VARCHAR(128),
+          14ingredientAmount INT,
+          15ingredient-Unit VARCHAR(128),
+          15ingredientAmount INT,
+          16ingredient-Unit VARCHAR(128),
+          16ingredientAmount INT,
+          17ingredient-Unit VARCHAR(128),
+          17ingredientAmount INT,
+          18ingredient-Unit VARCHAR(128),
+          18ingredientAmount INT,
+          19ingredient-Unit VARCHAR(128),
+          19ingredientAmount INT,
+        );
+        ```
     
