@@ -54,9 +54,14 @@ This is an instruction on getting the database with tables ready.
         );
         ```
         
-      2. For the different categories:
+      2. For the different ingredients
         ```SQL
-        CREATE TABLE ingredients;
+        CREATE TABLE ingredients(
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          uniqueID VARCHAR(32),
+          name VARCHAR(64)
+          description NVARCHAR(max),
+        );
         ```
         
       3. For the recipes them selfs:
